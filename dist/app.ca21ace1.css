@@ -2,6 +2,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 html,
 body,
 div,
@@ -445,15 +446,15 @@ textarea {
   padding: 0.2em 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
   background: #252525;
   min-height: 200vh;
+  font-family: "Poppins";
 }
 
 header {
@@ -478,6 +479,108 @@ header h1 {
   width: 800px;
   height: 500px;
   background: #000;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+}
+.wrapper .calculator [class*=__item] {
+  border: 1px solid #ffa500;
+}
+.wrapper .calculator__item1 {
+  grid-area: 1/1/2/6;
+  background: #a0a0a0;
+}
+.wrapper .calculator__item2 {
+  grid-area: 2/1/3/2;
+}
+.wrapper .calculator__item3 {
+  grid-area: 2/2/3/3;
+}
+.wrapper .calculator__item4 {
+  grid-area: 2/3/3/4;
+}
+.wrapper .calculator__item5 {
+  grid-area: 2/4/3/5;
+}
+.wrapper .calculator__item6 {
+  grid-area: 2/5/3/6;
+}
+.wrapper .calculator__item7 {
+  grid-area: 3/1/4/2;
+}
+.wrapper .calculator__item8 {
+  grid-area: 3/2/4/3;
+}
+.wrapper .calculator__item9 {
+  grid-area: 3/3/4/4;
+}
+.wrapper .calculator__item10 {
+  grid-area: 3/4/4/5;
+}
+.wrapper .calculator__item11 {
+  grid-area: 3/5/4/6;
+}
+.wrapper .calculator__item12 {
+  grid-area: 4/1/5/2;
+}
+.wrapper .calculator__item13 {
+  grid-area: 4/2/5/3;
+}
+.wrapper .calculator__item14 {
+  grid-area: 4/3/5/4;
+}
+.wrapper .calculator__item15 {
+  grid-area: 4/4/5/5;
+}
+.wrapper .calculator__item16 {
+  grid-area: 4/5/5/6;
+}
+.wrapper .calculator__item17 {
+  grid-area: 5/1/6/2;
+}
+.wrapper .calculator__item18 {
+  grid-area: 5/2/6/3;
+}
+.wrapper .calculator__item19 {
+  grid-area: 5/3/6/4;
+}
+.wrapper .calculator__item20 {
+  grid-area: 5/4/6/5;
+}
+.wrapper .calculator-item21 {
+  grid-area: 5/5/6/6;
+}
+.wrapper .calculator__item22 {
+  grid-area: 6/1/7/2;
+}
+.wrapper .calculator__item23 {
+  grid-area: 6/2/7/3;
+}
+.wrapper .calculator__item24 {
+  grid-area: 6/3/7/4;
+}
+.wrapper .calculator__item25 {
+  grid-area: 6/4/7/5;
+}
+.wrapper .calculator__item26 {
+  grid-area: 6/5/7/6;
+}
+.wrapper .calculator__item27 {
+  grid-area: 7/1/8/3;
+}
+.wrapper .calculator__item28 {
+  grid-area: 7/3/8/4;
+}
+.wrapper .calculator__item9 {
+  grid-area: 7/4/8/5;
+}
+.wrapper .calculator__item30 {
+  grid-area: 7/5/8/6;
+}
+.wrapper .calculator__item31 {
+  grid-area: 7/5/8/6;
 }
 
 /*# sourceMappingURL=/app.ca21ace1.css.map */
