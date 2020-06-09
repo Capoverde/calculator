@@ -90,12 +90,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* make sure to set some focus styles for accessibility */
 :focus {
   outline: 0;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -110,21 +108,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -132,34 +126,29 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
-
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
-
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
@@ -171,7 +160,6 @@ video {
   *zoom: 1;
   max-width: 100%;
 }
-
 /**
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
@@ -180,7 +168,6 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
-
 /**
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
@@ -188,7 +175,6 @@ audio:not([controls]) {
 [hidden] {
   display: none;
 }
-
 /**
  * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
@@ -203,14 +189,12 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
 }
-
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
   outline: thin dotted;
 }
-
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
@@ -218,7 +202,6 @@ a:active,
 a:hover {
   outline: 0;
 }
-
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
@@ -229,21 +212,18 @@ img {
   -ms-interpolation-mode: bicubic;
   /* 2 */
 }
-
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
 figure {
   margin: 0;
 }
-
 /**
  * Correct margin displayed oddly in IE 6/7.
  */
 form {
   margin: 0;
 }
-
 /**
  * Define consistent border, margin, and padding.
  */
@@ -252,7 +232,6 @@ fieldset {
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
-
 /**
  * 1. Correct color not being inherited in IE 6/7/8/9.
  * 2. Correct text not wrapping in Firefox 3.
@@ -267,7 +246,6 @@ legend {
   *margin-left: -7px;
   /* 3 */
 }
-
 /**
  * 1. Correct font size not being inherited in all browsers.
  * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
@@ -287,7 +265,6 @@ textarea {
   *vertical-align: middle;
   /* 3 */
 }
-
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
@@ -296,7 +273,6 @@ button,
 input {
   line-height: normal;
 }
-
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
@@ -307,7 +283,6 @@ button,
 select {
   text-transform: none;
 }
-
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  *    and `video` controls.
@@ -318,9 +293,10 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type="button"],
+/* 1 */
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -328,7 +304,6 @@ input[type=submit] {
   *overflow: visible;
   /* 4 */
 }
-
 /**
  * Re-set default cursor for disabled elements.
  */
@@ -336,15 +311,14 @@ button[disabled],
 html input[disabled] {
   cursor: default;
 }
-
 /**
  * 1. Address box sizing set to content-box in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -354,13 +328,12 @@ input[type=radio] {
   *width: 13px;
   /* 3 */
 }
-
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
@@ -368,16 +341,14 @@ input[type=search] {
   /* 2 */
   box-sizing: content-box;
 }
-
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 /**
  * Remove inner padding and border in Firefox 3+.
  */
@@ -386,7 +357,6 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-
 /**
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
@@ -397,7 +367,6 @@ textarea {
   vertical-align: top;
   /* 2 */
 }
-
 /**
  * Remove most spacing between table cells.
  */
@@ -405,7 +374,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 html,
 button,
 input,
@@ -413,71 +381,28 @@ select,
 textarea {
   color: #222;
 }
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
-
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
-
 img {
   vertical-align: middle;
 }
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-
 textarea {
   resize: vertical;
 }
-
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #252525;
-  min-height: 200vh;
-}
-
-header {
-  width: 100%;
-  height: 30vh;
-  display: grid;
-  place-content: center;
-  background: #161616;
-}
-header h1 {
-  text-transform: uppercase;
-  color: #eeeeee;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-content: center;
-}
-.wrapper .calculator {
-  width: 800px;
-  height: 500px;
-  background: #000;
-}
-
-/*# sourceMappingURL=/app.ca21ace1.css.map */
