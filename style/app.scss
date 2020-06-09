@@ -1,17 +1,11 @@
 @import "reset";
+@import "vars";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-//----------------- variables:
-// backgrounds:
-$header-bg: #161616;
-$body-bg: #252525;
-// colors:
-$header-c: #eeeeee;
 
 body {
   background: $body-bg;
