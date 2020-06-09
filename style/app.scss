@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//----------------- variables:
+// backgrounds:
+$header-bg: #161616;
+$body-bg: #252525;
+// colors:
+$header-c: #eeeeee;
+
+body {
+  background: $body-bg;
+  min-height: 200vh;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  display: grid;
+  place-content: center;
+  background: $header-bg;
+
+  h1 {
+    text-transform: uppercase;
+    color: $header-c;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+
+  .calculator {
+    width: 800px;
+    height: 500px;
+    background: #000;
+  }
+}

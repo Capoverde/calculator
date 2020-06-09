@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #252525;
+  min-height: 200vh;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  display: grid;
+  place-content: center;
+  background: #161616;
+}
+header h1 {
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+.wrapper .calculator {
+  width: 800px;
+  height: 500px;
+  background: #000;
+}
+
+/*# sourceMappingURL=/app.ca21ace1.css.map */
