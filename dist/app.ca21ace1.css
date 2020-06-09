@@ -487,6 +487,21 @@ header h1 {
 }
 .wrapper .calculator [class*=__item] {
   border: 1px solid #ffa500;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.wrapper .calculator [class*=__item]:hover {
+  background-color: #ffa60062;
+}
+.wrapper .calculator .klik {
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  transform: scale(0.98);
 }
 .wrapper .calculator__item1 {
   grid-area: 1/1/2/6;
