@@ -448,6 +448,9 @@ textarea {
 
 html,
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
@@ -482,19 +485,19 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
 }
 .wrapper .calculator [class*=__item] {
   border: 1px solid #ffa500;
-  color: #ffffff;
+  font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 .wrapper .calculator [class*=__item]:hover {
-  background-color: #ffa60062;
+  background-color: #ffa600d0;
 }
 .wrapper .calculator .klik {
   -webkit-transform: scale(0.98);
@@ -502,10 +505,34 @@ header h1 {
   -ms-transform: scale(0.98);
   -o-transform: scale(0.98);
   transform: scale(0.98);
+  background-color: #ffa600;
+}
+.wrapper .calculator #display {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  color: #ffffff;
+}
+.wrapper .calculator #display:hover {
+  background: #2a0d9c;
+  cursor: auto;
+}
+.wrapper .calculator__item12, .wrapper .calculator__item13, .wrapper .calculator__item14, .wrapper .calculator__item17, .wrapper .calculator__item18, .wrapper .calculator__item19, .wrapper .calculator__item22, .wrapper .calculator__item23, .wrapper .calculator__item24, .wrapper .calculator__item27 {
+  color: #000000;
+  background: #9e9d9d;
+}
+.wrapper .calculator__item6 {
+  background: red;
+}
+.wrapper .calculator__item5 {
+  background: blue;
+}
+.wrapper .calculator__item9, .wrapper .calculator__item11, .wrapper .calculator__item15, .wrapper .calculator__item16, .wrapper .calculator__item20, .wrapper .calculator__item25, .wrapper .calculator__item26, .wrapper .calculator__item28, .wrapper .calculator__item29, .wrapper .calculator__item31 {
+  background: orange;
 }
 .wrapper .calculator__item1 {
   grid-area: 1/1/2/6;
-  background: #a0a0a0;
+  background: #2a0d9c;
 }
 .wrapper .calculator__item2 {
   grid-area: 2/1/3/2;

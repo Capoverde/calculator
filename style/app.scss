@@ -5,6 +5,7 @@
 
 html,
 body {
+  @include antialiasing();
   overflow-x: hidden;
 }
 
@@ -41,12 +42,12 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
 
     [class*="__item"] {
       border: 1px solid $item-border-c;
-      color: $item-c;
+      font-size: 50px;
       @include flexCenter(desktop);
       cursor: pointer;
 
@@ -57,7 +58,69 @@ header {
 
     .klik {
       @include scale(0.98);
+      background-color: #ffa600;
     }
+
+    #display {
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px;
+      color: $display-c;
+
+      &:hover {
+        background: $item1-bg;
+        cursor: auto;
+      }
+    }
+//=========================
+//  number buttons styling
+//=========================
+    &__item12,
+    &__item13,
+    &__item14,
+    &__item17,
+    &__item18,
+    &__item19,
+    &__item22,
+    &__item23,
+    &__item24,
+    &__item27 {
+      color: $item-calculator-c;
+      background: $item-numbers-bg;
+    }
+
+    //===========================
+    //  operator buttons styling
+    //===========================
+  &__item6{
+    background: red;
+  }
+
+  &__item5{
+    background: blue;
+  }
+
+
+
+   &__item9,
+   &__item11,
+   &__item15,
+   &__item16,
+   &__item20,   
+   &__item25,   
+   &__item26,   
+   &__item28,   
+   &__item29,  
+   &__item31 
+
+   {
+     background: orange;
+   }
+
+
+//####################################################
+//################# calculator grid   ################
+//####################################################
 
     &__item1 {
       grid-area: 1 / 1 / 2 / 6;

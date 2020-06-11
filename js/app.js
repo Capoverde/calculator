@@ -4,7 +4,8 @@ const everyItem = [...items]
 everyItem.forEach(el => el.addEventListener('click', e => {
   e.preventDefault()
   el.classList.add('klik')
-  setTimeout(function () {
+
+  setTimeout(() => {
     el.classList.remove('klik')
   }, 200)
   console.log('klik')
