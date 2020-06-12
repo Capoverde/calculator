@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 html,
 body,
 div,
@@ -462,7 +462,7 @@ body {
 
 header {
   width: 100%;
-  height: 30vh;
+  height: 10vh;
   display: grid;
   place-content: center;
   background: #161616;
@@ -473,6 +473,7 @@ header h1 {
 }
 
 .wrapper {
+  padding: 20px 0;
   width: 100%;
   height: 100%;
   display: grid;
@@ -508,6 +509,8 @@ header h1 {
   background-color: #ffa600;
 }
 .wrapper .calculator #display {
+  height: 15vh;
+  font-size: 80px;
   display: flex;
   justify-content: flex-end;
   padding: 5px;
